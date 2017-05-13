@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Collapsing Categorie List\n"
+"POT-Creation-Date: 2016-07-10 13:49+0100\n"
+"PO-Revision-Date: 2016-07-10 13:56+0100\n"
+"Last-Translator: José Miguel Gil Córdoba <migrad@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: /var/www/plugins_wordpress/wp-content/plugins/"
+"collapsing-category-list\n"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:118
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr "Feed de todos los post archivados bajo %s"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:327
+msgid "A list or dropdown of categories"
+msgstr "Una lista o desplegable de categorías"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:328
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:335
+msgid "Categories"
+msgstr "Categorias"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:388
+msgid "Select Category"
+msgstr "Selecciona una categoría"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:463
+msgid "Title:"
+msgstr "Título:"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:468
+msgid "Display as dropdown"
+msgstr "Mostrar como desplegable"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:471
+msgid "Show post counts"
+msgstr "Mostrar número de post"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:474
+msgid "Show hierarchy"
+msgstr "Mostrar hijos"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:477
+msgid "Collaps categories"
+msgstr "Colapsar categorias"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:480
+msgid "Remove all links"
+msgstr "Eliminar todos los enlaces"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:483
+msgid ""
+"Hide icons to expand / collapse categories. (The link will be used to "
+"expand / collapse categories)"
+msgstr ""
+"Ocultar iconos para expandir / colapsar categorías. (El enlace será usado "
+"para expadir / colapsar las categorías)"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:486
+msgid "Collapse categories when show a post"
+msgstr "Colapsar las categorías cuando se muestre un post"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:490
+msgid "Order by:"
+msgstr "Ordenar por:"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:492
+msgid "Name"
+msgstr "Nombre"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:493
+msgid "Slug"
+msgstr "Slug"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:497
+msgid "Image to collapse:"
+msgstr "Imagen para colapsar"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:500
+msgid "Image to expand:"
+msgstr "Imagen para expandir"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:503
+msgid "To display the icons use CSS classes instead of images"
+msgstr "Para mostrar los iconos usa clases CSS en vez de imágenes"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:505
+msgid "Remove link of categories by title (separeted with commas):"
+msgstr "Eliminar el enlace de las categorías por título (separadas por comas):"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:508
+msgid "Hide categories by title (separeted with commas):"
+msgstr "Ocultar categorías por título (separadas por comas):"
+
+#: /var/www/plugins_wordpress/wp-content/plugins/collapsing-category-list/collapscatlist.php:511
+msgid "Not collapse the following categories by title (separated with commas):"
+msgstr ""
+"No colapsar las siguientes categorías por título (separadas por comas):"

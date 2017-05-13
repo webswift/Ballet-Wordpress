@@ -1,0 +1,119 @@
+#lbg_logo{
+	background:url(../images/plg_icon_large.png) top left no-repeat;
+	background-position:5px,10px;
+	padding:0px 0px 0px 43px;
+	margin-bottom:10px;
+}
+.lbg_list-1 {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	line-height:27px;
+	margin: 0 0 1.5em 0;	
+}
+
+.lbg_list-1 li {
+	background-image: url(../images/list-1.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 25px;
+}
+.lbg_list-1 a { 
+	text-decoration:underline;
+}
+.lbg_subtitle {
+	color:#21759b;
+	font-weight:bold;
+	font-size:14px;
+}
+.lbg_regGray {
+	font-size:12px;
+	color:#999999;
+	font-style:italic;
+}
+
+/** SORTABLE **/
+
+#all_in_one_carousel_sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#all_in_one_carousel_sortable li { margin: 0 5px 5px 5px; padding: 9px 0px 11px 0px; font-size: 12px; text-indent:10px; /*height: 1.5em;*/ }
+html>body #all_in_one_carousel_sortable li { /*height: 1.5em;*/ line-height: 1.2em; }
+	.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+#all_in_one_carousel_sortable a {
+	color:#21759b;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:underline;
+}	
+#all_in_one_carousel_sortable a:hover {
+	color:#FF0000;
+}
+#all_in_one_carousel_sortable .options {
+	float:right;
+	padding: 0px 10px 0px 0px;
+}
+#all_in_one_carousel_sortable .cursor_move {
+	cursor:move;
+}
+.toogle-btn-closed {
+	width:33px;
+	height:31px;
+	background:url(../images/icons/open_div.gif) 0 -5px no-repeat;
+	float:right;
+	cursor: pointer;
+}
+.toogle-btn-opened {
+	width:33px;
+	height:31px;
+	background:url(../images/icons/close_div.gif) 0 -5px no-repeat;
+	float:right;
+	cursor: pointer;
+}
+.toggleable {
+	clear:both;
+	display:none;
+	background:#FFFFFF;
+	padding:10px;
+	margin-bottom:-11px;
+	font-weight:normal;
+	cursor:default;
+}
+.ajax-message {
+	padding:5px;
+	text-align:center;
+}
+.text_line_settings {
+	border-bottom:1px solid #CCC;
+	margin:10px 0 0 -50px;
+}
+.my_draggable {
+	width:32px;
+	height:32px;
+	padding:0;
+	top:18px;
+	left:50px;
+	position:absolute;
+}
+.my_draggable textarea {
+	background-color: transparent;
+}
+.my_draggable h2 {
+	background:url(../images/move_icon.jpg) top left no-repeat;
+	height:32px;
+	margin:0;
+	padding:0;
+}
+.delete_text {
+	background:url(../images/delete_icon.png) left top no-repeat;
+	width:94px;
+	height:35px;
+	cursor:pointer;
+}
+
+#all_in_one_carousel_updating_witness {
+	display:none;
+	position: fixed;
+	bottom: 40px;
+	right:20px;
+	padding:3px 5px;
+	border:1px solid #CCCCCC;
+}

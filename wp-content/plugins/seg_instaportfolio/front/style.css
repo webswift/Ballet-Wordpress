@@ -1,0 +1,2426 @@
+/*
+    Theme Name: Instagram Portfolio
+    Author: Raf Segat
+    Version: 1.3
+    Description: Elegant Instagram Plugin Wordpress
+
+    Wordpress Plugin
+    --------------------------
+    Build Version :     1.3
+    Author :            rafasegat@gmail.com
+    Website :           http://instagramwordpress.rafsegat.com
+
+*/
+
+/*==================
+   Instagram Portfolio
+====================*/
+
+
+ @font-face {
+
+    font-family: 'instagram-icon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/instagram-icon.eot?58015844');
+    src: url('fonts/instagram-icon.eot?58015844#iefix') format('embedded-opentype'),
+    url('fonts/instagram-icon.woff?58015844') format('woff'),
+    url('fonts/instagram-icon.ttf?58015844') format('truetype'),
+    url('fonts/instagram-icon.svg?58015844#instagram-icon') format('svg');
+
+} 
+
+@font-face {
+    font-family: 'instagram-icon';
+    src:    url('fonts/new-instagram.eot?hycwp1');
+    src:    url('fonts/new-instagram.eot?hycwp1#iefix') format('embedded-opentype'),
+        url('fonts/new-instagram.ttf?hycwp1') format('truetype'),
+        url('fonts/new-instagram.woff?hycwp1') format('woff'),
+        url('fonts/new-instagram.svg?hycwp1#new-instagram') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'social-icons';
+  src: url('fonts/social-icons.eot?51178908');
+  src: url('fonts/social-icons.eot?51178908#iefix') format('embedded-opentype'),
+       url('fonts/social-icons.woff?51178908') format('woff'),
+       url('fonts/social-icons.ttf?51178908') format('truetype'),
+       url('fonts/social-icons.svg?51178908#social-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*================================= HEADER */
+
+.seg-instaportfolio .seg-header .seg-header-profile-picture{
+    float: left;
+}
+
+.seg-instaportfolio .seg-header .seg-header-profile-picture a{
+  outline: 0;
+  border: none !important;
+}
+
+.seg-instaportfolio .seg-header .seg-header-profile-picture img{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 35px;
+  margin: 3px;
+}
+
+.seg-instaportfolio .seg-header{
+    width: 100%;
+    float: left;
+}
+
+.seg-instaportfolio .seg-header .seg-header-row-1{
+    float: left;
+    width: 100%;
+}
+
+.seg-instaportfolio .seg-header .seg-font-instagram{
+    float: right;
+    color: white;
+    font-size: 24px;
+    margin: 8px 8px 0 0;
+    line-height: 22px;
+    padding: 0;
+}
+
+.seg-instaportfolio .seg-header .seg-header-counts{
+    float: left;
+    margin: 8px 0 0 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.seg-instaportfolio .seg-header .seg-header-counts li{
+    float: left;
+    margin-left: 5px;
+}
+
+.seg-instaportfolio .seg-header .seg-header-counts li i{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-style:normal;
+    font-weight: bold;
+    font-family: "Open-Sans", sans-serif;
+}
+
+.seg-instaportfolio .seg-header .seg-header-counts li span{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Open-Sans", sans-serif;
+}
+
+.seg-instaportfolio .seg-header .seg-follow-instagram{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    outline: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+    background: white;
+    opacity: 1;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.seg-instaportfolio .seg-header .seg-header-counts .seg-header-posts{
+    float: left;
+}
+
+.seg-instaportfolio .seg-header .seg-header-name{
+  float: left;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 12px;
+  font-family: 'Open-Sans', sans-serif;
+  border-left: 1px solid black;
+  padding-left: 10px;
+}
+
+
+.seg-instaportfolio .seg-header .seg-header-bio{
+    font-size: 12px;
+    opacity: .8;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.seg-instaportfolio .seg-header .seg-header-hashtag{
+
+    padding-left: 5px;
+
+}
+
+.seg-instaportfolio .seg-header .seg-header-hashtag span{
+
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 38px;
+
+}
+
+/*=============================== END HEADER */
+
+/*=============================== ICONS */
+.seg-instaportfolio .seg-font-instagram:before,
+.seg-instaportfolio .seg-font-heart:before
+{
+    font-family: 'instagram-icon';
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+}
+
+.seg-instaportfolio .seg-font-instagram:before
+{
+    content: "\ea92";
+}
+
+.seg-instaportfolio .seg-font-heart:before
+{
+    content: '\e801';
+}
+
+/*=============================== SOCIAL ICONS */
+
+.seg-instaportfolio .seg-font-facebook:before,
+.seg-instaportfolio .seg-font-twitter:before,
+.seg-instaportfolio .seg-font-pinterest:before,
+.seg-instaportfolio .seg-font-gplus:before
+{
+    font-family: 'social-icons';
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+}
+
+.seg-instaportfolio .seg-social-icons{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    transition: all .35s;
+    -webkit-transition: all .35s;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-social-icon{
+    margin: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    text-decoration: none;
+    color: #333;
+    padding: 0;
+    transition: all .35s;
+    -webkit-transition: all .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo:hover .seg-social-icons{
+    bottom: 0;
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-social-facebook:hover{
+  background: #446aa9;
+}
+
+.seg-instaportfolio .seg-social-twitter:hover{
+  background: #1c96c7;
+}
+
+.seg-instaportfolio .seg-social-pinterest:hover{
+  background: #c21f24;
+}
+
+.seg-instaportfolio .seg-social-gplus:hover{
+  background: #d54a3b;
+}
+
+.seg-instaportfolio .seg-social-icon i{
+    font-size: 18px;
+    color: #333;
+}
+
+.seg-instaportfolio .seg-social-icon:hover i{
+    color: white;
+}
+
+.seg-instaportfolio .seg-font-facebook:before
+{
+    content: '\e800';
+}
+
+.seg-instaportfolio .seg-font-twitter:before
+{
+    content: '\e801';
+}
+
+.seg-instaportfolio .seg-font-pinterest:before
+{
+    content: '\e802';
+}
+
+.seg-instaportfolio .seg-font-gplus:before
+{
+    content: '\e803';
+}
+
+.seg-circle
+{
+    border-radius: 50%;
+}
+
+.seg-instaportfolio .seg-font-small{
+
+    font-size: small;
+
+}
+
+.seg-instaportfolio .seg-font-medium{
+
+    font-size: medium;
+
+}
+
+.seg-instaportfolio .seg-font-large{
+
+    font-size: large;
+
+}
+
+.seg-instaportfolio .seg-font-icon-small{
+
+    font-size: 18px;
+
+}
+
+.seg-instaportfolio .seg-font-icon-medium{
+
+    font-size: 25px;
+
+}
+
+.seg-instaportfolio .seg-font-icon-large{
+
+    font-size: 32px;
+
+}
+
+.seg-instaportfolio  .seg-box-shadow{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*== filter effects */
+
+.seg-instaportfolio .seg-grayscale
+{
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale');
+}
+
+.seg-instaportfolio .seg-sepia
+{
+    -webkit-filter: sepia(1);
+       -moz-filter: sepia(100%);
+        -ms-filter: sepia(100%);
+         -o-filter: sepia(100%);
+            filter: sepia(100%);
+            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey');
+}
+
+.seg-instaportfolio .seg-saturate
+{
+    -webkit-filter: saturate(8);
+       -moz-filter: saturate(8);
+        -ms-filter: saturate(8);
+         -o-filter: saturate(8);
+            filter: saturate(8);
+}
+
+.seg-instaportfolio .seg-hue-rotate
+{
+    -webkit-filter: hue-rotate(90deg);
+       -moz-filter: hue-rotate(90deg);
+        -ms-filter: hue-rotate(90deg);
+         -o-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+}
+
+.seg-instaportfolio .seg-invert
+{
+    -webkit-filter: invert(.8);
+       -moz-filter: invert(.8);
+        -ms-filter: invert(.8);
+         -o-filter: invert(.8);
+            filter: invert(.8);
+}
+
+
+.seg-instaportfolio .seg-brightness
+{
+    -webkit-filter: brightness(3);
+       -moz-filter: brightness(3);
+        -ms-filter: brightness(3);
+         -o-filter: brightness(3);
+            filter: brightness(3);
+}
+
+.seg-instaportfolio .seg-contrast
+{
+    -webkit-filter: contrast(4);
+       -moz-filter: contrast(4);
+        -ms-filter: contrast(4);
+         -o-filter: contrast(4);
+            filter: contrast(4);
+}
+
+
+.seg-instaportfolio .seg-blur
+{
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);
+         -o-filter: blur(5px);
+            filter: blur(5px);
+}
+
+/*== hover effect */
+
+
+.seg-instaportfolio .seg-grayscale-hover:hover .seg-main-image
+{
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale');
+}
+
+.seg-instaportfolio .seg-sepia-hover:hover .seg-main-image
+{
+    -webkit-filter: sepia(1);
+       -moz-filter: sepia(100%);
+        -ms-filter: sepia(100%);
+         -o-filter: sepia(100%);
+            filter: sepia(100%);
+            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey');
+}
+
+.seg-instaportfolio .seg-saturate-hover:hover .seg-main-image
+{
+    -webkit-filter: saturate(8);
+       -moz-filter: saturate(8);
+        -ms-filter: saturate(8);
+         -o-filter: saturate(8);
+            filter: saturate(8);
+}
+
+.seg-instaportfolio .seg-hue-rotate-hover:hover .seg-main-image
+{
+    -webkit-filter: hue-rotate(90deg);
+       -moz-filter: hue-rotate(90deg);
+        -ms-filter: hue-rotate(90deg);
+         -o-filter: hue-rotate(90deg);
+            filter: hue-rotate(90deg);
+}
+
+.seg-instaportfolio .seg-invert-hover:hover .seg-main-image
+{
+    -webkit-filter: invert(.8);
+       -moz-filter: invert(.8);
+        -ms-filter: invert(.8);
+         -o-filter: invert(.8);
+            filter: invert(.8);
+}
+
+
+.seg-instaportfolio .seg-brightness-hover:hover .seg-main-image
+{
+    -webkit-filter: brightness(3);
+       -moz-filter: brightness(3);
+        -ms-filter: brightness(3);
+         -o-filter: brightness(3);
+            filter: brightness(3);
+}
+
+.seg-instaportfolio .seg-contrast-hover:hover .seg-main-image
+{
+    -webkit-filter: contrast(4);
+       -moz-filter: contrast(4);
+        -ms-filter: contrast(4);
+         -o-filter: contrast(4);
+            filter: contrast(4);
+}
+
+
+.seg-instaportfolio .seg-blur-hover:hover .seg-main-image
+{
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);
+         -o-filter: blur(5px);
+            filter: blur(5px);
+}
+
+/*== end filter effects */
+
+.seg-instaportfolio
+{
+    position: relative;
+    float: left;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos
+{
+    margin: 0;
+    padding: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos img
+{
+    display: block;
+    width: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos li
+{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside
+{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    pointer-events: none;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions,
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions > a
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+    color: #fff;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions > a
+{
+    font-size: 0;
+    z-index: 1000;
+    white-space: nowrap;
+    text-indent: 200%;
+    opacity: 0;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram
+{
+    color: white;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    letter-spacing: 1px;
+}
+
+.seg-instaportfolio .seg-load-more
+{
+    float: left;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-load-more span
+{
+    cursor: pointer;
+    position: relative;
+    color: #5d6365;
+}
+
+.seg-instaportfolio .seg-load-more span::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 150%;
+    left: 0;
+    background: #5d6365;
+    opacity: 0;
+    transition: all .35s;
+    -webkit-transition: all .35s;
+}
+
+.seg-instaportfolio .seg-load-more span:hover::before{
+    opacity: 1;
+    top: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram{
+    transition: all .35s;
+    -webkit-transition: all .35s;
+    opacity: .3;
+}
+.seg-instaportfolio .seg-instaportfolio-photos .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-instagram{
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos .seg-main-image
+{
+    transition: all .35s;
+    -webkit-transition: all .35s; ;
+}
+
+/*===============================================================*/
+/*========================= FLINDERS EFFECT =====================*/
+/*===============================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos img
+{
+    transition: all .35s;
+    -webkit-transition: all .35s; ;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    -webkit-transform: scale(1,0);
+            transform: scale(1,0);
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(0,-20px,0);
+            transform: translate3d(0,-20px,0);
+    text-align: center;
+    /* opacity: .6; */
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0 12%;
+}
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like{
+    
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    left: 0;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+    text-align: center;
+    opacity: 0;
+
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::after
+{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: -5%;
+   opacity
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   top: 15%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-flinders .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+
+/*==============================================================*/
+/*========================= CLAYTON EFFECT =====================*/
+/*==============================================================*/
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside
+{
+    z-index: 9999;
+    width: 100%;
+
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo:hover img 
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+    text-align: left;
+    padding: 2em;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram
+{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 20px 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton.animated-lines .seg-instaportfolio-photo .seg-instaportfolio-inside .animated-line::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    content: '';
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(-101%,0,0);
+            transform: translate3d(-101%,0,0);
+    background: #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton.animated-lines .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .animated-line::after
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    padding: 1em 0;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(100%,0,0);
+            transform: translate3d(100%,0,0);
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-insta-description
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 5%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-clayton .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+/*==============================================================*/
+/*=========================== BELLS EFFECT =====================*/
+/*==============================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+    text-align: right;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    line-height: 1.5;
+    bottom: 60px;
+    -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    line-height: 1.5;
+    bottom: 30px;
+    -webkit-transform: translate3d(0,100%,0);
+            transform: translate3d(0,100%,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram
+{
+    top: 5%;
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 5%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram::after
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: '';
+    -webkit-transform: translate3d(0,40px,0);
+            transform: translate3d(0,40px,0);
+    background: #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram::after,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-instagram::after,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-bells .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+
+/*=================================================================*/
+/*=========================== SWANSTON EFFECT =====================*/
+/*=================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside
+{
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside img
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(0,0,300px);
+            transform: translate3d(0,0,300px);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: .6;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: -5%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   top: 5%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 1px;
+    content: '';
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+    background: #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before
+{
+    -webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
+            transform: translate3d(-50%,-50%,0) rotate(45deg);
+    opacity: .5;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::after
+{
+    -webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
+            transform: translate3d(-50%,-50%,0) rotate(-45deg);
+    opacity: .5;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+            transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    bottom: 40%;
+    padding: 0 5%;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+            transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+    text-align: center;
+}
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    bottom: 10%;
+
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+            transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+    text-align: center;
+}
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+            transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-swanston .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+            transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+}
+
+
+/*==================================================================*/
+/*=========================== CAULFIELD EFFECT =====================*/
+/*==================================================================*/
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside img
+{
+    transition: opacity .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside:hover img
+{
+    opacity: .4;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    height:         calc(50% - 30px);
+    content: '';
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(0,-100%,0);
+            transform: translate3d(0,-100%,0);
+    border: 7px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram{
+    
+    position: absolute;
+    width:100%;
+    top: 25%;
+
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::after
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+    text-align: left;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(0,-100px,0);
+            transform: translate3d(0,-100px,0);
+    text-align: center;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-caulfield .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-insta-description
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+
+/*==================================================================*/
+/*============================= CHAPEL EFFECT ======================*/
+/*==================================================================*/
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    -webkit-transform: scale(0,1);
+            transform: scale(0,1);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 5%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    -webkit-transform: scale(1,0);
+            transform: scale(1,0);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-instagram
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-insta-description
+{
+    -webkit-transform: translate3d(0,-10px,0);
+            transform: translate3d(0,-10px,0);
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-icon-like
+{
+
+    -webkit-transform: translate3d(0,-10px,0);
+            transform: translate3d(0,-10px,0);
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+
+    bottom: 5%;
+
+    width: 100%;
+
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-photo .seg-instaportfolio-inside img,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside img,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside .seg-instaportfolio-captions::after,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+    opacity: .7;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::after
+{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+    opacity: 1;
+}
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::after,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover .seg-icon-like,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chapel .seg-instaportfolio-inside:hover img
+{
+    transition-delay: .15s;
+}
+
+
+/*====================================================================*/
+/*============================= ST KILDA EFFECT ======================*/
+/*====================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside img
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda img .seg-instaportfolio-inside:hover
+{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+
+    opacity: .5;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 5%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside .seg-icon-like
+{
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside .seg-icon-instagram
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+    position: absolute;
+    width: 100%;
+    top: 5%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside .seg-insta-description
+{
+    padding: 3em;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(0,20px,0) scale(1.1);
+            transform: translate3d(0,20px,0) scale(1.1);
+    opacity: 0;
+    border: 1px solid #fff;
+    margin: 4em 3em;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-st-kilda .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0) scale(1);
+            transform: translate3d(0,0,0) scale(1);
+    opacity: 1;
+    
+}
+
+
+/*====================================================================*/
+/*============================= TAMACHI EFFECT =======================*/
+/*====================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside img
+{
+    width:         calc(100% + 60px);
+    max-width: none;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-50px,0,0);
+            transform: translate3d(-50px,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-20px,0,0);
+            transform: translate3d(-20px,0,0);
+    opacity: 0;
+    border: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+    text-align: left;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-icon-instagram
+{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 15%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-insta-description
+{
+
+    position: absolute;
+    width: 100%; 
+    top: 50%;
+
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-icon-like
+{
+
+    position: absolute;
+    width: 100%; 
+    bottom: 20%;
+
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-10px,0,0);
+            transform: translate3d(-10px,0,0);
+    text-align: center;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+    opacity: .7;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tamachi .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+
+/*====================================================================*/
+/*============================= SHIBUYA EFFECT =======================*/
+/*====================================================================*/
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside img
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: .5;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-instaportfolio-captions
+{
+    padding: 3em;
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 15%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-icon-instagram
+{
+    padding: 10% 0 20px 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-insta-description
+{
+    max-width: 200px;
+    margin: 0 auto;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside .seg-icon-like
+{
+    padding-top: 20px;
+    max-width: 200px;
+    margin: 0 auto;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shibuya .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/*====================================================================*/
+/*============================= ASAKUSA EFFECT =======================*/
+/*====================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-inside img
+{
+    width:         calc(100% + 60px);
+    max-width: none;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-30px,0,0) scale(1.12);
+            transform: translate3d(-30px,0,0) scale(1.12);
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 5%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: translate3d(0,0,0) scale(1);
+            transform: translate3d(0,0,0) scale(1);
+    opacity: .5;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-inside .seg-icon-instagram
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 2em;
+}
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5em 2em;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-inside .seg-insta-description
+{
+    width: 30%;
+    padding: 0 10px 0 0;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-40px,0,0);
+            transform: translate3d(-40px,0,0);
+    text-align: right;
+    opacity: 0;
+    border-right: 1px solid #fff;
+    margin-top: 10px;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-asakusa .seg-instaportfolio-inside:hover .seg-insta-description
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+
+/*=====================================================================*/
+/*============================= SHINJUKU EFFECT =======================*/
+/*=====================================================================*/
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside img
+{
+    transition: opacity .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-icon-like,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-insta-description
+{
+    text-align: center;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+            transform: scale3d(1.4,1.4,1);
+    opacity: 0;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 30px rgba(255,255,255,.2);
+}
+
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-icon-instagram
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-photo .seg-instaportfolio-inside .seg-social-icons
+{
+   top: inherit;
+   bottom: -5%;
+   opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   bottom: 15%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-insta-description{
+    top: 40%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-icon-like
+{
+    bottom: 20%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: scale(.9);
+            transform: scale(.9);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-shinjuku .seg-instaportfolio-inside:hover .seg-instaportfolio-captions
+{
+    background-color: rgba(58,52,42,0);
+}
+
+/*=====================================================================*/
+/*============================= TIRADENTES EFFECT =======================*/
+/*=====================================================================*/
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside img
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    opacity: .95;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside .seg-icon-like,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside .seg-insta-description
+{
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: scale3d(.95,.95,1);
+            transform: scale3d(.95,.95,1);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside .seg-icon-instagram
+{
+    padding-top: 10%;
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(0,20px,0);
+            transform: translate3d(0,20px,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside .seg-icon-like
+{
+    padding-top: 5%;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+            transform: perspective(1000px) rotate3d(1,0,0,90deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-tiradentes .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
+            transform: perspective(1000px) rotate3d(1,0,0,0);
+
+    opacity: 1;
+}
+
+
+/*===========================================================================*/
+/*============================= CINQUENTENARIO EFFECT =======================*/
+/*===========================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-insta-description
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    content: '';
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+    transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    opacity: 0;
+    border: 2px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside .seg-insta-description
+{
+    -webkit-transform: translate3d(-50px,-50px,0);
+            transform: translate3d(-50px,-50px,0);
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before
+{
+    -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+            transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
+    opacity: 1;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(-50%,-50%,0)  scale3d(1,1,1);
+            transform: translate3d(-50%,-50%,0)  scale3d(1,1,1);
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-cinquentenario .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: translate3d(-50%,-50%,0) scale3d(.8,.8,1);
+            transform: translate3d(-50%,-50%,0) scale3d(.8,.8,1);
+    opacity: 0;
+}
+
+
+
+/*===========================================================================*/
+/*================================= YOYOGI EFFECT ===========================*/
+/*===========================================================================*/
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside img
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: scale3d(1.05,1.05,1);
+            transform: scale3d(1.05,1.05,1);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition:         -webkit-transform .6s;
+    transition:         transform .6s;
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+            transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    background: rgba(255,255,255,.5);
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   top: 25%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside .seg-insta-description
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 150px;
+    margin: 3em;
+    padding: 0 1em;
+    transition: opacity .35s;
+    text-align: right;
+    opacity: 0;
+    border-right: 4px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside .seg-icon-like{
+    position: absolute;
+    
+
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside .seg-icon-instagram
+{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+
+    opacity: .6;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before
+{
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+            transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-yoyogi .seg-instaportfolio-inside:hover .seg-insta-description
+{
+    transition-delay: .1s;
+    opacity: 1;
+}
+
+
+/*===========================================================================*/
+/*================================= HALONG EFFECT ===========================*/
+/*===========================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside img
+{
+    transition: opacity .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside .seg-icon-like
+{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    border: 2px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside .seg-insta-description
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside .seg-icon-instagram
+{
+    width: 50%;
+    height: 50%;
+    padding: 20%;
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(10px,10px,0);
+            transform: translate3d(10px,10px,0);
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside .seg-icon-like
+{
+    float: right;
+
+    padding: 20%;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+    text-align: center;
+
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside:hover .seg-icon-instagram
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-halong .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+
+    opacity: 1;
+}
+
+
+/*===========================================================================*/
+/*================================= CHIANG EFFECT ===========================*/
+/*===========================================================================*/
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-instaportfolio-captions::after,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside img,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-instaportfolio-captions::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+            transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    opacity: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-icon-like
+{
+    -webkit-transform: scale3d(.8,.8,1);
+            transform: scale3d(.8,.8,1);
+    text-align: center;
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-icon-instagram
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-insta-description
+{
+    position: absolute; 
+    top: 40%;
+    width: 100%; 
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute; 
+    bottom: 10%;
+    width: 100%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside .seg-icon-like
+{
+    opacity: 0;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: scale3d(1.05,1.05,1);
+            transform: scale3d(1.05,1.05,1);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::after
+{
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+            transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside:hover .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-chiang .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+
+    opacity: 1;
+}
+
+
+
+
+/*===========================================================================*/
+/*================================= SAIGON EFFECT ===========================*/
+/*===========================================================================*/
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-insta-description
+{
+    opacity: 0;
+}
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside img
+{
+    width:         calc(100% + 10px);
+    max-width: none;
+    margin: -10px 0 0 -10px;
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(10px,10px,0);
+            transform: translate3d(10px,10px,0);
+    opacity: .9;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   top: 25%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-instaportfolio-captions::before,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-instaportfolio-captions::before
+{
+    position: absolute;
+    right: -45px;
+    bottom: -70px;
+    width: 200px;
+    height: 200px;
+    content: '';
+    -webkit-transform: scale3d(.5,.5,1);
+            transform: scale3d(.5,.5,1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    opacity: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 900px rgba(255,255,255,.2);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-icon-like
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: translate3d(5px,5px,0);
+            transform: translate3d(5px,5px,0);
+    text-align: left;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-icon-instagram
+{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    padding: 0;
+    -webkit-transform: translate3d(20px,20px,0);
+            transform: translate3d(20px,20px,0);
+    text-align: right;
+    opacity: 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside:hover .seg-instaportfolio-captions::before
+{
+    -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+    opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside:hover .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-saigon .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+
+/*===========================================================================*/
+/*================================= ANGKOR EFFECT ===========================*/
+/*===========================================================================*/
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside img,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside .seg-icon-like
+{
+    transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside:hover img
+{
+    -webkit-transform: scale3d(2,2,1);
+            transform: scale3d(2,2,1);
+    opacity: .1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside .seg-icon-instagram
+{
+    transition:         -webkit-transform .35s;
+    transition:         transform .35s;
+    -webkit-transform: scale3d(.8,.8,1);
+            transform: scale3d(.8,.8,1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-photo .seg-instaportfolio-inside:hover .seg-social-icons
+{
+   top: 25%;
+   opacity: 1;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside .seg-insta-description
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    padding: 30px;
+    -webkit-transform: scale3d(.8,.8,1);
+            transform: scale3d(.8,.8,1);
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    text-align: center;
+    opacity: 0;
+    border: 2px solid #fff;
+    width: 100%;
+    margin: 0 0 5% 0;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside .seg-icon-like
+{
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scale3d(.8,.8,1);
+            transform: scale3d(.8,.8,1);
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    text-align: center;
+    opacity: 0;
+    top: 30%;
+}
+
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside:hover .seg-icon-instagram,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside:hover .seg-insta-description,
+.seg-instaportfolio .seg-instaportfolio-photos.seg-angkor .seg-instaportfolio-inside:hover .seg-icon-like
+{
+    -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+    opacity: 1;
+}
+
+
+.seg-scroll-no-effect
+{
+    opacity: 1 !important;
+}
+
+.seg-scroll-fade
+{
+    transition: opacity .6s, -webkit-transform .6s;
+    transition: opacity .6s, transform .6s;
+    opacity: 0;
+}
+
+.seg-scroll-fade-animated
+{
+    opacity: 1 !important;
+}
+
+.seg-scroll-scale
+{
+    transition: opacity .6s, -webkit-transform .6s;
+    transition: opacity .6s, transform .6s;
+    -webkit-transform: scale3d(.5,.5,.5);
+            transform: scale3d(.5,.5,1);
+    opacity: 0;
+}
+
+.seg-scroll-scale-animated
+{
+    -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+    opacity: 1 !important;
+}
+
+/*================================== LIGHTBOX */
+.seg-lightbox{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.seg-lightbox-topbar{
+
+    background: none !important;
+    bottom: 45px !important;
+    top: inherit !important;
+}
+.seg-lightbox-topbar img{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 45px !important;
+  cursor: pointer !important;
+  transition: all .35s;
+  -webkit-transition: all .35s;
+}
+
+.seg-lightbox-caption{
+    margin-top: 10px;
+}
+
+.seg-lightbox-topbar img:hover{
+  opacity: 0 !important;
+}
+
+.seg-lightbox-topbar .seg-lightbox-link{
+  width: 45px;
+  height: 45px;
+  background: black url(../front/img/fa-link.png) no-repeat center center;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display:none;
+}
+
+.seg-lightbox-topbar a:hover .seg-lightbox-link{
+    display: inline-block;
+}
+
+.seg-lightbox-topbar a:hover img {
+    display: none !important;
+}
+
+/*============================ LOADING SPIN */
+.seg-spinner {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  margin: 10px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
